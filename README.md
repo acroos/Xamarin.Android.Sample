@@ -1,5 +1,4 @@
 # Xamarin.Android.Sample
-------
 
 This is a simple Xamarin.Android sample app with a few different pages to test out controls.
 
