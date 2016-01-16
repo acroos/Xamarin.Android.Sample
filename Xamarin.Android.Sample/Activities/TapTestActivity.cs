@@ -21,7 +21,7 @@ namespace Xamarin.Android.Sample
             base.OnCreate (savedInstanceState);
 
             var doubleTapDetector = new GestureDetector (this, new DoubleTapGestureListener ());
-            doubleTapDetector.DoubleTap += (sender, e) => ShowAlert ("DoubleTap Alert");
+            doubleTapDetector.DoubleTap += (sender, e) => ShowAlert ("DoubleTap Alert", "DoubleTap");
             // Create your application here
             SetContentView(Resource.Layout.TapTests);
             ActionBar.SetHomeButtonEnabled (true);
@@ -36,12 +36,13 @@ namespace Xamarin.Android.Sample
             adapter.SetDropDownViewResource (global::Android.Resource.Layout.SimpleSpinnerDropDownItem);
             spinner.Adapter = adapter;
                 
-            tapButton.Click += (sender, e) => ShowAlert ("Tap Alert");
+            tapButton.Click += (sender, e) => ShowAlert ("Tap Alert", "Tap");
             doubleTapButton.Touch += (sender, e) => doubleTapDetector.OnTouchEvent (e.Event);
-            longPressButton.LongClick += (sender, e) => ShowAlert ("LongPress Alert");
+            longPressButton.LongClick += (sender, e) => ShowAlert ("LongPress Alert", "LongPress");
             spinner.ItemSelected += (sender, e) => {
                 if (!pageLoadSelection) {
-                    ShowAlert("You chose " + spinner.GetItemAtPosition(e.Position));
+                    var selection = spinner.GetItemAtPosition(e.Position);
+                    ShowAlert("You chose " + selection, selection.ToString());
                 }
                 pageLoadSelection = false;
             };
