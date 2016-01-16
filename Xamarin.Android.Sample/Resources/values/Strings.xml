@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!-- MAIN ACTIVITY -->
+    <string name="app_name">Xamarin.Android.Sample</string>
+    <string name="tap_tests">TAP TESTS</string>
+    <string name="text_tests">TEXT TESTS</string>
+    <string name="scroll_tests">SCROLL TESTS</string>
+    <string name="webview_tests">WEBVIEW TESTS</string>
+    <string name="swipe_tests">SWIPE TESTS</string>
+
+<!-- TAP TESTS -->
+    <string name="tap_test_tap_button">TAP ME</string>
+    <string name="tap_test_double_tap_button">DOUBLE TAP ME</string>
+    <string name="tap_test_long_press_button">LONG PRESS ME</string>
+    <string name="tap_test_text">No touches yet!</string>
+    <string name="tap_test_checkbox">CHECK BOX</string>
+    <string name="tap_test_radio_button">RADIO BUTTON</string>
+    <string-array name="tap_test_spinner_array">
+        <item>ItemA</item>
+        <item>ItemB</item>
+        <item>ItemC</item>
+        <item>ItemD</item>
+        <item>ItemL</item>
+    </string-array>
+</resources>

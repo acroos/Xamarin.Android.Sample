@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tap_test_tap_button"
+        android:text="@string/tap_test_tap_button"
+        android:clickable="true"
+        android:longClickable="true" />
+    <Button
+        android:text="@string/tap_test_double_tap_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tap_test_double_tap_button"
+        android:clickable="true" />
+    <Button
+        android:text="@string/tap_test_long_press_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tap_test_long_press_button"
+        android:longClickable="true" />
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:linksClickable="false"
+        android:text="@string/tap_test_text" />
+    <CheckBox
+        android:text="@string/tap_test_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tap_test_checkbox" />
+    <RadioButton
+        android:text="@string/tap_test_radio_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tap_test_radio_button" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tap_test_spinner"
+        android:clickable="true" />
+</LinearLayout>
